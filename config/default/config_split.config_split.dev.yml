@@ -1,0 +1,15 @@
+uuid: a9990b36-e613-4fea-bf16-f184c6587f66
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+folder: ../config/envs/dev
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 1

@@ -1,0 +1,16 @@
+uuid: e006af01-c099-4821-92ec-6eb9ff9366b6
+langcode: en
+status: false
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    internal: true
+_core:
+  default_config_hash: vlYzr-rp2f9NMp-Qlr4sFjlqRq-90mco5-afLNGwCrU
+id: node.rss
+label: RSS
+targetEntityType: node
+cache: true
