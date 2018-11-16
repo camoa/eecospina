@@ -9,12 +9,13 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes: 
+    cloud: 'eecospina@svn-12800.prod.hosting.acquia.com:eecospina.git'
 deploy:
   tag_source: true
 drush:
   aliases:
-    remote: '${project.machine_name}.test'
+    remote: '${project.machine_name}.dev'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
@@ -34,3 +35,5 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+cloud:
+  appId: c13810b9-215d-48d4-ae48-9733369b53ea
