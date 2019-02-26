@@ -1,62 +1,46 @@
-uuid: 6cf44cb0-ebcc-4217-9960-fa0d69cd3e36
+uuid: b055277b-5cbc-48bd-9b2d-42d88543a03a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_in_library
-    - field.field.media.image.image
+    - field.field.media.image.field_media_image
     - image.style.thumbnail
     - media.type.image
   module:
-    - content_moderation
-    - image_widget_crop
+    - image
     - path
 _core:
-  default_config_hash: kyoAHlZTGIuGTaQuBblGBk8EhfnVKOl19_0j5WbpQqM
+  default_config_hash: tAax8z9_7i7WAgRobX74gL7X94OcSgGouxiEtMY07Sw
 id: media.image.default
 targetEntityType: media
 bundle: image
 mode: default
 content:
-  field_media_in_library:
-    type: boolean_checkbox
-    weight: 4
-    settings:
-      display_label: true
-    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
     region: content
-  image:
-    type: image_widget_crop
-    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_media_image:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-      crop_list:
-        - freeform
-      show_crop_area: true
-      crop_preview_image_style: crop_thumbnail
-      crop_types_required: {  }
-      show_default_crop: true
-      warn_multiple_usages: false
     third_party_settings: {  }
+    type: image_image
+    weight: 0
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    settings: {  }
-    region: content
-    third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 3
+    weight: -5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   path:
     type: path
-    weight: 30
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -67,6 +51,14 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
 hidden:
-  created: true
-  uid: true
+  moderation_state: true

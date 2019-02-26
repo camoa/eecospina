@@ -1,4 +1,4 @@
-uuid: 777c123d-be4c-43c8-8279-80b97cf789db
+uuid: 04e3830c-bfab-4abc-8a38-e22428006249
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - seven
 _core:
-  default_config_hash: VkTX9-sU-VNFbQhQ_qcn6JwBpp81Nbu0lzsBsEE259o
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
 id: seven_help
 theme: seven
 region: help

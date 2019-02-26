@@ -1,6 +1,6 @@
-uuid: a54b64b9-ea53-4fb3-b52e-29d7c54611a8
-name: 'BLTed 8'
-mail: no-reply@acquia.com
+uuid: 10744cfc-b59b-4c9d-a034-bfd80440a6eb
+name: 'Drush Site-Install'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
