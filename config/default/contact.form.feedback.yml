@@ -1,4 +1,4 @@
-uuid: 32ed7183-26a7-428f-88e3-430a6dab6dbe
+uuid: 1140fda5-7c16-4170-8f22-e0e62a511052
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - no-reply@acquia.com
+  - carlos.ospina@acquia.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
