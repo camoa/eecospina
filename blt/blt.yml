@@ -9,7 +9,7 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: 
+  remotes:
     cloud: 'eecospina@svn-12800.prod.hosting.acquia.com:eecospina.git'
 deploy:
   tag_source: true
